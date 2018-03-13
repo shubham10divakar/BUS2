@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.subhamdivakar.bus.activity3"
+    android:background="@drawable/unnamed"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="1080dp"
+        android:layout_height="1380dp"
+        tools:layout_editor_absoluteX="-4dp"
+        tools:layout_editor_absoluteY="16dp">
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="368dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:entries="@array/area_types"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="10dp"
+
+            android:layout_below="@+id/message"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+        <Button
+
+            android:id="@+id/button5"
+            android:layout_width="153dp"
+            android:layout_height="66dp"
+            android:layout_alignEnd="@+id/button3"
+            android:layout_alignRight="@+id/button3"
+            android:layout_below="@+id/spinner"
+            android:layout_marginTop="77dp"
+            android:text="COMPLAINTS AND SUGGESTIONS"
+            tools:layout_editor_absoluteX="212dp"
+            tools:layout_editor_absoluteY="206dp"
+            />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="151dp"
+            android:layout_height="66dp"
+            android:layout_marginEnd="17dp"
+            android:layout_marginRight="17dp"
+            android:onClick="bustiming"
+            android:text="BUS TIMINGS"
+            tools:layout_editor_absoluteX="41dp"
+            tools:layout_editor_absoluteY="308dp"
+            android:layout_alignBottom="@+id/button2"
+            android:layout_alignRight="@+id/spinner2"
+            android:layout_alignEnd="@+id/spinner2" />
+
+
+        <Button
+
+            android:id="@+id/button2"
+            android:layout_width="157dp"
+            android:layout_height="67dp"
+            android:layout_alignEnd="@+id/button4"
+            android:layout_alignRight="@+id/button4"
+            android:layout_below="@+id/button5"
+            android:layout_marginTop="72dp"
+            android:onClick="busschedule"
+            android:text="BUS SCHEDULE"
+            tools:layout_editor_absoluteX="28dp"
+            tools:layout_editor_absoluteY="329dp"
+
+            />
+
+        <Button
+
+            android:id="@+id/button4"
+            android:layout_width="148dp"
+            android:layout_height="67dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginStart="24dp"
+            android:onClick="busfare"
+            android:text="BUS FARES"
+            tools:layout_editor_absoluteX="49dp"
+            tools:layout_editor_absoluteY="206dp"
+            android:layout_alignTop="@+id/button5"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+
+            />
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:textColor="#f9845b"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/button4"
+            android:layout_toEndOf="@+id/button4" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="79dp"
+            android:layout_below="@+id/button3"
+            android:layout_alignRight="@+id/button3"
+            android:layout_alignEnd="@+id/button3"
+            android:layout_marginRight="19dp"
+            android:layout_marginEnd="19dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:text="LOGGED IN AS"
+            android:layout_above="@+id/spinner"
+            android:layout_alignLeft="@+id/button4"
+            android:layout_alignStart="@+id/button4" />
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="368dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/button4"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:entries="@array/area_types"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="From"
+            android:layout_below="@+id/textView2"
+            android:layout_alignLeft="@+id/button2"
+            android:layout_alignStart="@+id/button2" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="TO"
+            android:textColor="@color/colorPrimary"
+            android:layout_above="@+id/spinner2"
+            android:layout_alignLeft="@+id/button4"
+            android:layout_alignStart="@+id/button4" />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="click to upload bus schedule"
+            android:layout_below="@+id/button3"
+            android:layout_alignRight="@+id/ratingBar"
+            android:layout_alignEnd="@+id/ratingBar"
+            android:onClick="busscheduleupload"/>
+
+
+    </RelativeLayout>
+
+    </android.support.constraint.ConstraintLayout>

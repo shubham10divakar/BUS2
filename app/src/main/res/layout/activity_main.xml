@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.subhamdivakar.bus.MainActivity"
+    android:background="@drawable/we"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="1080dp"
+        android:layout_height="1370dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WELCOME TO JAMSHEDPUR BUS
+                 SERVICE APP"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textColor="#FFCC0000"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/textView3"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_alignTop="@+id/radioGroup2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_marginTop="18dp"
+            android:id="@+id/radioGroup2"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/textView3"
+            android:layout_alignStart="@+id/textView3">
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:layout_marginStart="14dp"
+                android:text="Bus Owner"
+                android:onClick="start"
+                android:layout_below="@+id/textView3"
+                android:layout_alignLeft="@+id/textView3"
+                android:layout_alignStart="@+id/textView3"
+                android:layout_marginTop="126dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                />
+
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="77dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/radioGroup2"
+                android:layout_alignStart="@+id/radioGroup2"
+                android:layout_below="@+id/radioGroup2"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="17dp"
+                android:onClick="start2"
+                android:text="User"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+            <RadioButton
+                android:id="@+id/radioButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Skip(Guest)"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="17dp"
+                android:onClick="start3"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+        </RadioGroup>
+    </RelativeLayout>
+
+
+
+
+</android.support.constraint.ConstraintLayout>

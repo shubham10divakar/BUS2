@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.subhamdivakar.bus.activity5"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="0dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Enter name of image to download(EX-schedule)for downloading schedule"
+            android:id="@+id/editTextId" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Download"
+            android:id="@+id/buttonGetImage"
+            android:layout_marginTop="43dp"
+            android:layout_below="@+id/editTextId"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="97dp"
+            android:layout_marginStart="97dp" />
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="300dp"
+        android:id="@+id/image"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/buttonGetImage"
+        android:layout_alignStart="@+id/buttonGetImage" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
